@@ -2,7 +2,17 @@
 <!DOCTYPE struts PUBLIC
     "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
     "http://struts.apache.org/dtds/struts-2.3.dtd">
-
 <struts>
-	
+	<package name="StockManageSystem" namespace="/" extends="struts-default">
+	    <action name="goIndex" class="com.xiaowen.action.IndexAction">
+	       <result name="index">/view/main.jsp</result>
+	    </action>
+	    
+	    <action name="login" class="com.xiaowen.action.LoginAction">
+			<result name="login">/pages/admin/index_1.jsp</result>
+			<result name="error">/pages/admin/index_1.jsp</result>
+			<result name="main" type="redirect">/pages/admin/main.jsp</result>
+			<result name="logOut" type="redirect">/view/main.jsp</result>
+		</action>
+	</package>
 </struts>
