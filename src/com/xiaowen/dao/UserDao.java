@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 import com.xiaowen.model.User;
 
 /**
- *登陆的Dao层
+ *UserDao的Dao数据层
  * @author xiaowen
  * 2016年12月4日
  */
