@@ -107,7 +107,7 @@ public class StockDao {
 	 * @throws Exception
 	 */
 	public int stockSave(Connection con,Stock stock) throws Exception{
-		String sql = "insert t_stock value(null,?,?,?,?,?)";
+		String sql = "insert into t_stock value(null,?,?,?,?,?)";
 		PreparedStatement pstmt=con.prepareStatement(sql);
 		pstmt.setString(1,stock.getGoodsId());
 		pstmt.setString(2, stock.getStockNum());
