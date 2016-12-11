@@ -75,7 +75,7 @@ public class ProviderDao {
 	 * @throws Exception
 	 */
 	public int providerSave(Connection con,Provider provider) throws Exception{
-		String sql = "insert t_provider value(null,?,?,?,?,?)";
+		String sql = "insert into t_provider value(null,?,?,?,?,?)";
 		PreparedStatement pstmt=con.prepareStatement(sql);
 		pstmt.setInt(1,provider.getProId());
 		pstmt.setString(2, provider.getProName());
